@@ -1,0 +1,20 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "learn react",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "delin",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.10.0",
+    "reaact": "^0.0.1-security",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "reactdom": "^2.0.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
