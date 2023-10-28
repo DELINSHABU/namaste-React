@@ -2949,10 +2949,12 @@ var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 //? content in the page
 const headingMod = /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
-    id: "head"
+    id: "head",
+    key: "head"
 }, "This head tag is comming from React");
 const paraMod = /*#__PURE__*/ (0, _reactDefault.default).createElement("p", {
-    id: "para"
+    id: "para",
+    key: "para"
 }, "This all I need");
 const container = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
     id: "container"
@@ -2960,6 +2962,8 @@ const container = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", 
     headingMod,
     paraMod
 ]);
+console.log(headingMod);
+console.log(paraMod);
 //? react-dom    
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(container);

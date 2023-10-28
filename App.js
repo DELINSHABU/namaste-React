@@ -6,12 +6,14 @@
  import ReactDOM from "react-dom/client"
  
  //? content in the page
-        const headingMod = React.createElement("h1",{
-            id: "head"
+       const headingMod = React.createElement("h1",{
+            id: "head",
+            key: 'head'
         },"This head tag is comming from React")
         
         const paraMod  = React.createElement("p",{
-            id:"para"
+            id:"para",
+            key: "para"
         },
         "This all I need")  
         
@@ -19,6 +21,9 @@
             id: "container"
         },
         [headingMod,paraMod])
+
+        console.log(headingMod)
+        console.log(paraMod)
         
         
         //? react-dom    
