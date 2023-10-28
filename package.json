@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "learn react",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "author": "delin",
@@ -12,10 +14,12 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "parcel": "^2.10.1",
     "process": "^0.11.10"
   },
-  "browserList":[
+  "browserList": [
     "cover 99.5%"
-  ]
+  ],
+  "main": "App.js"
 }
